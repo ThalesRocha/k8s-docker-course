@@ -8,7 +8,7 @@ before_install:
 
 script:
   - docker run -e CI=true thalesrocha/docker-react npm run test -- --coverage
-
+  
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
